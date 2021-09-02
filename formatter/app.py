@@ -13,8 +13,7 @@ def get_formatted_text(text):
 
 
 def main(*args, **kwargs):
-    # TODO: settings
-    text = pyperclip.paste()
+    text = ""
     while True:
         if text == pyperclip.paste():
             continue
@@ -25,5 +24,4 @@ def main(*args, **kwargs):
 
 
 if __name__ == '__main__':
-    print("string-formatter running...")
     main(sys.argv)
